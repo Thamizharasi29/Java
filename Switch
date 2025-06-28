@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class month {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        String month = scanner.next();
+        switch(month){
+            case"jan":
+            {
+            System.out.println("it has 31 days");
+            break;
+            } 
+            case"feb":
+            {
+            System.out.println("it has 28 days");
+            break;
+            }
+            case"mar":
+            {
+            System.out.println("it has 31 days");
+            break;
+            }
+            default:
+            {
+            System.out.println("Enter the valid month");
+            }
+        }
+    }
+}
