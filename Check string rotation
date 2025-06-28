@@ -1,0 +1,14 @@
+public class mainn{
+    public static void main(String[] args) {
+        String s1 = "abcd";
+        String s2 = "cdab";
+        if(s1.length() != s2.length()) {
+            System.out.println("Not rotations (length mismatch)");
+        }else {
+            String combined = s1 + s2;
+            System.out.print(combined);
+            boolean isRotation = combined.contains(s2);
+            System.out.println(" Are rotation ? " + isRotation);
+        }
+    }
+}
