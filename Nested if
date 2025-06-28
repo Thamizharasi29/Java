@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class nestedif {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Height");
+        int height = sc.nextInt();
+        System.out.println("Enter the Age");
+        int age = sc.nextInt();
+
+        if (age > 18) {
+            if (height > 160) {
+                System.out.println("Age and Height is enough");
+            } else {
+                System.out.println("Age is enough but not Height");
+            }
+        } else {
+            System.out.println("Age is not enough");
+        }
+        sc.close();
+    }
+}
